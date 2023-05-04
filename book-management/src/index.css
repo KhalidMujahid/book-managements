@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 2rem;
+}
+
+img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.row{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+.card{
+    margin-top: 12px;
+}
+
+span{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.card .buttons{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.buttons button{
+    width: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.buttons button:nth-child(1){
+    background-color: rgb(206, 206, 25);
+}
+
+.buttons button:nth-child(2){
+    background-color: rgb(218, 68, 68);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer button{
+    padding: 1rem;
+    width: 30%;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb(31, 133, 31);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.input{
+    margin-top: 1.5rem;
+}
+
+.input input{
+    outline: none;
+    padding: .7rem;
+}
+
+.input button{
+    padding: .7rem;
+    text-transform: uppercase;
+    width: 13rem;
+    background-color: rgb(29, 100, 29);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+.form .image{
+    width: 100px;
+    height: 100px;
+    margin-top: 9px;
+}
+
+@media(max-width: 600px){
+    .row{
+        grid-template-columns: 1fr;
+    }
+}
